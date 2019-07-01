@@ -1,4 +1,4 @@
-package com.stackroute.junitdemo;
+package com.stackroute.javape1;
 
 import org.junit.*;
 

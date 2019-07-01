@@ -1,4 +1,4 @@
-package com.stackroute.junitdemo;
+package com.stackroute.javape1;
 
 import org.junit.*;
 
@@ -9,25 +9,17 @@ public class SubstringRepeaterTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objSubstringRepeater = new SubstringRepeater();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objSubstringRepeater = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass()
-    {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass ()
-    {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test

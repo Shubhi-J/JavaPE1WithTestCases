@@ -1,4 +1,4 @@
-package com.stackroute.junitdemo;
+package com.stackroute.javape1;
 
 import org.junit.*;
 
@@ -9,23 +9,17 @@ public class ReverseStringTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objReverseString = new ReverseString();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objReverseString = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test
@@ -59,7 +53,7 @@ public class ReverseStringTest {
         String result=objReverseString.reverseString(null);
 
         //assert
-        assertEquals("null not allowed",result);
+        assertNull("null not allowed",result);
     }
     @Test
     public void givenZeroShouldReturnZero() {

@@ -1,4 +1,4 @@
-package com.stackroute.junitdemo;
+package com.stackroute.javape1;
 
 import org.junit.*;
 
@@ -9,23 +9,17 @@ public class LetterDigitSymbolCheckerTest {
 
         @Before
         public void setUp() {
-            System.out.println("Before");
             objLetterDigitSymbolChecker = new LetterDigitSymbolChecker();
         }
         @After
         public void tearDown () {
-            System.out.println("After");
             objLetterDigitSymbolChecker = null;
         }
 
         @BeforeClass
-        public static void setUpBeforeClass() {
-            System.out.println("BeforeClass");
-        }
+        public static void setUpBeforeClass(){}
         @AfterClass
-        public static void tearDownAfterClass () {
-            System.out.println("AfterClass");
-        }
+        public static void tearDownAfterClass (){}
 
 
         @Test
@@ -54,7 +48,6 @@ public class LetterDigitSymbolCheckerTest {
         public void givenDigitShouldReturnDigitMessage() {
             //arrange
 
-            //act
             //act
             String result=objLetterDigitSymbolChecker.letterDigitSymbolChecker('5');
 

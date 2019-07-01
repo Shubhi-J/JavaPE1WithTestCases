@@ -1,4 +1,4 @@
-package com.stackroute.junitdemo;
+package com.stackroute.javape1;
 
 import org.junit.*;
 
@@ -9,25 +9,17 @@ public class VowelConsonantCheckerTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objVowelConsonantChecker = new VowelConsonantChecker();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objVowelConsonantChecker = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass()
-    {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass ()
-    {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test
@@ -60,7 +52,7 @@ public class VowelConsonantCheckerTest {
         String result=objVowelConsonantChecker.vowelConsonantChecker(null);
 
         //assert
-        assertEquals("null not allowed",result);
+        assertNull("null not allowed",result);
     }
     @Test
     public void givenAlphaNumericStringShouldReturnConsonantVowelNotAnAlphabet() {

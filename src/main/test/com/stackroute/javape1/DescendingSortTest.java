@@ -1,4 +1,4 @@
-package com.stackroute.junitdemo;
+package com.stackroute.javape1;
 
 import org.junit.*;
 
@@ -9,23 +9,17 @@ public class DescendingSortTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objDescendingSort = new DescendingSort();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objDescendingSort = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass() { }
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass () { }
 
 
     @Test
@@ -67,6 +61,7 @@ public class DescendingSortTest {
         String result=objDescendingSort.descendingSort(null);
 
         //assert
-        assertEquals("null not allowed",result);
+        //assertEquals("null not allowed",result);
+        assertNull("null not allowed",result);
     }
 }
