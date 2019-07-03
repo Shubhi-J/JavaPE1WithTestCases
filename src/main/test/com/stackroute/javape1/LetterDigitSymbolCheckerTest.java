@@ -72,6 +72,6 @@ public class LetterDigitSymbolCheckerTest {
         String result=objLetterDigitSymbolChecker.letterDigitSymbolChecker(' ');
 
         //assert
-        assertEquals("special symbol",result);
+        assertNotEquals("not an alphabet",result);
     }
 }

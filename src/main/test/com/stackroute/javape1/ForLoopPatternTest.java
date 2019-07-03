@@ -52,6 +52,6 @@ public class ForLoopPatternTest {
         String result=objForLoopPattern.forLoopPattern(0);
 
         //assert
-        assertEquals("zero not allowed",result);
+        assertNotEquals("0",result);
     }
 }
